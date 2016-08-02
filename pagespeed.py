@@ -21,7 +21,7 @@ except:
 
 
 # try to get config from ENV
-TEST_URI = os.environ.get('PAGESPEED_URI', exporter_config.get('TEST_URI'))
+TEST_URI = os.environ.get('PAGESPEED_TEST_URI', exporter_config.get('TEST_URI'))
 API_KEY = os.environ.get('PAGESPEED_API_KEY', exporter_config.get('API_KEY'))
 BIND_IP = os.environ.get('PAGESPEED_HOST', exporter_config.get('BIND_IP', ''))
 BIND_PORT = os.environ.get('PAGESPEED_PORT', exporter_config.get('BIND_PORT', 9113))
